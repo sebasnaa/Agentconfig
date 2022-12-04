@@ -1,0 +1,14 @@
+- hosts: app1
+  gather_facts: False
+  ignore_errors: True
+  ignore_unreachable: True
+  tasks:
+  - name: ping server
+    ping:
+    register: ping_status
+
+  - debug:
+      msg: "{{ inventory_hostname }} - YES"
+    with_items:
+      - "{{ inventory_hostname }}"
+    when: ping_status.ping is defined

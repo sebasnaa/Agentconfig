@@ -1,1 +1,1 @@
-app1 ansible_host=13.81.171.24 ansible_user=azureuser ansible_ssh_private_key_file=mykeyDR.pem
+app1 ansible_host=20.16.33.143 ansible_user=azureuser ansible_ssh_private_key_file=mykeyDR.pem
